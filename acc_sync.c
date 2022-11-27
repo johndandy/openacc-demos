@@ -17,10 +17,10 @@ int* init_zero(int* arr, size_t len) {
 }
 
 int print_array(int* arr, size_t len) {
-    size_t i;
+    size_t i = 0;
 
     printf("[");
-    for (i = 0; i < len - 1; i++)
+    for (; i < len - 1; i++)
         printf("%d ", arr[i]);
     printf("%d", arr[i]);
     printf("]");
